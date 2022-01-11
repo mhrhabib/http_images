@@ -3,8 +3,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:http_tuto/models/image_model.dart';
-import 'package:http_tuto/screens/posts_screen.dart';
+
 import 'package:http_tuto/widgets/image_list.dart';
+
+import 'screens/posts_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const PostScreen(),
     );
   }
 }

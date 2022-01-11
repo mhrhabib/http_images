@@ -37,7 +37,7 @@ class _PostScreenState extends State<PostScreen> {
           future: getData(),
           builder: (context, AsyncSnapshot snapshot) {
             if (snapshot.hasData) {
-              return Text(snapshot.data[0]['title']);
+              return Text(snapshot.data[1]['title']);
             }
             return const CircularProgressIndicator();
           },
