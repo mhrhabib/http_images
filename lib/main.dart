@@ -7,6 +7,7 @@ import 'package:http_tuto/models/image_model.dart';
 import 'package:http_tuto/widgets/image_list.dart';
 
 import 'screens/posts_screen.dart';
+import 'screens/store_home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PostScreen(),
+      home: const StoreHomePage(),
     );
   }
 }
